@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Airports Scarper</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="container mx-auto flex justify-center flex-wrap pt-3">
+          <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4">
+            <div class="w-10 h-10 text-white p-2 bg-blue-600 rounded-full">
+              <i class="fa fa-plane-departure" style='font-size:18px' fill="white"></i>
+            </div>
+            <span class="ml-3 text-xl"> Flight Scrapper </span>
+          </a>
+        </div>
+        <p class="flex justify-center mt-10 text-l font-semibold tracking-wider uppercase">Find Your Flight Easily</p>
+      </header>
+
+      <form @submit.prevent="Submit" class="text-blueGray-700 ">
+        <div class="items-center px-5 py-2 lg:px-20">
+          <div class="flex flex-col w-full p-5 mx-auto my-6 transition duration-500 ease-in-out transform bg-white border rounded-lg lg:w-2/6 md:w-1/2 md:mt-0">
+            
+            <div class="relative w-full max-w-md px-1 py-2 mx-auto rounded-md">
+              <label for="airportCode" class="text-base leading-7 text-blueGray-500">Airport</label>
+              <div class="relative">
+                <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+                  <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                    <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+                <input @keyup="clickInput()" ctype="text" v-model="airportDisplay" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+
+              <div :class="toggle">
+                <div class="absolute inset-x-0 z-40 px-6 py-3 mx-5 mt-4 overflow-y-auto bg-white border border-gray-300 rounded-md max-h-72 dark:bg-gray-800 dark:border-transparent">
+                  <div @click="SetAirportCode(aiport.AiportCode, aiport.Name)" v-for="aiport in airports" class="block cursor-pointer py-1">
+                    <h3 class="font-medium text-gray-700 dark:text-gray-100 hover:underline">( {{aiport.AiportCode}} ) {{aiport.Name}}</h3>
+                  </div>
+                  <div :class="NotFound"> Not Found :'(</div>
+                </div>
+              </div>
+          </div>
+           
+          <div class="relative mt-4">
+            <label class="flex flex justify-center space-x-8">
+              <div>
+                <input type="radio" class="form-radio" v-model="airportQueryType" value="0">
+                <span class="ml-2 text-blueGray-500">Départs</span>
+              </div>
+              <div>
+                <input type="radio" class="form-radio" v-model="airportQueryType" value="1">
+                <span class="ml-2 text-blueGray-500">Arrivées</span>
+              </div>
+            </label>
+          </div>
+
+          <button type="submit" class="w-full px-16 py-2 my-2 mr-2 text-base text-white transition duration-500 ease-in-out transform bg-blue-600 border-blue-600 rounded-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blue-800 "> Search </button>
+          
+          </div>
+        </div>
+      </form>
+
+      <table class="min-w-max w-full table-auto">
+        <thead>
+          <tr class="bg-blue-200 text-gray-600 uppercase text-sm leading-normal">
+              <th class="py-3 px-6 text-center">FlightCode</th>
+              <th class="py-3 px-6 text-center">Company</th>
+              <th class="py-3 px-6 text-center">City</th>
+              <th class="py-3 px-6 text-center">Time</th>
+              <th class="py-3 px-6 text-center">Situation</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-600 text-sm font-light">
+            <tr v-for="flight in flights" class="border-b border-gray-200 leading-normal">
+                <td class="py-3 px-6 text-xl text-center">{{flight.FlightCode}}</td>
+                <td class="py-3 px-6 text-xl text-center">{{flight.Company}}</td>
+                <td class="py-3 px-6 text-xl text-center">{{flight.Destination}}</td>
+                <td class="py-3 px-6 text-xl text-center">{{flight.Time}}</td>
+                <td class="py-3 px-6 text-xl text-center">{{flight.Situation}}</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+<script>
+  var app = new Vue({
+  el: '#app',
+  data: {
+    toggle: "false",
+    NotFound:"false",
+    airportDisplay:"",
+    airportQueryType:"",
+    airportCode:"",
+    airports:[],
+    flights: []
+  },
+  methods: {
+    Submit() {
+      var form = new FormData();
+      form.append('airportQueryType', this.airportQueryType)
+      form.append('airportCode', this.airportCode)
+
+      axios.post('/flights', form)
+        .then(response => {
+          if (response.data == null) {
+            alert("Not Found :'(")
+          }
+          else{
+            this.flights = response.data
+          }
+        })
+        .catch(error => {
+          alert("Server Error");
+          console.log(error)
+        })
+    },
+    GetAirport(){
+      this.airports.length = 0
+      var form = new FormData();
+      form.append('value', this.airportDisplay)
+
+      axios.post('/airport', form)
+        .then(response => {
+          if (response.data == null) {
+            this.NotFound = "true"
+          }
+          else{
+            this.NotFound = "false"
+            this.airports = response.data
+          }
+        })
+        .catch(error => {
+          alert("Server Error");
+          console.log(error)
+        })
+    },
+    clickInput () {
+      if (this.airportDisplay.length != 0) {
+        this.GetAirport()
+        this.toggle = "true"
+      }
+    },
+    SetAirportCode(code, name){
+      this.toggle = "false"
+      this.airportDisplay = "(" + code + ") " + name
+      this.airportCode = code
+    }
+
+  },
+  computed:{
+
+  }
+})
+</script>
+
+<style>
+  .true{
+    opacity: 1;
+  }
+  .false{
+    opacity: 0;
+  }
+
+</style>
+

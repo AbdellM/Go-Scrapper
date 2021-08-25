@@ -1,0 +1,181 @@
+FlightCode,Company,Destination,Time,Situation
+AF 1896,Air France,(CDG) Paris,9:05 AM,Prévu
+DL 8602 ^,Delta Air Lines,(CDG) Paris,9:05 AM,Prévu
+KL 2114 ^,KLM,(CDG) Paris,9:05 AM,Prévu
+MU 1923 ^,China Eastern Airlines,(CDG) Paris,9:05 AM,Prévu
+AT 1461,Royal Air Maroc,(OZZ) Ouarzazate,9:25 AM,Prévu
+AA 7990 ^,American Airlines,(OZZ) Ouarzazate,9:25 AM,Prévu
+AZ 6137 ^,Alitalia,(OZZ) Ouarzazate,9:25 AM,Prévu
+IB 1828 ^,Iberia,(OZZ) Ouarzazate,9:25 AM,Prévu
+AT 777,Royal Air Maroc,(ORY) Paris,9:55 AM,Prévu
+AT 209,Royal Air Maroc,(YUL) Montreal,10:05 AM,Prévu
+AT 219,Royal Air Maroc,(IAD) Dulles,10:20 AM,Prévu
+AA 7959 ^,American Airlines,(IAD) Dulles,10:20 AM,Prévu
+AT 1835,Royal Air Maroc,(BRU) Brussels,10:30 AM,Prévu
+AT 402,Royal Air Maroc,(RAK) Marrakech,10:35 AM,Prévu
+AZ 6695 ^,Alitalia,(RAK) Marrakech,10:35 AM,Prévu
+TK 8312 ^,Turkish Airlines,(RAK) Marrakech,10:35 AM,Prévu
+AT 430,Royal Air Maroc,(AGA) Agadir,10:40 AM,Prévu
+AZ 6120 ^,Alitalia,(AGA) Agadir,10:40 AM,Prévu
+IB 1818 ^,Iberia,(AGA) Agadir,10:40 AM,Prévu
+QR 4517 ^,Qatar Airways,(AGA) Agadir,10:40 AM,Prévu
+S7 4036 ^,S7 Airlines,(AGA) Agadir,10:40 AM,Prévu
+TP 1438,TAP Air Portugal,(LIS) Lisbon,10:50 AM,Prévu
+EY 1522 ^,Etihad Airways,(LIS) Lisbon,10:50 AM,Prévu
+AT 1421,Royal Air Maroc,(VIL) Dakhla,10:55 AM,Prévu
+AZ 6143 ^,Alitalia,(VIL) Dakhla,10:55 AM,Prévu
+AT 1813,Royal Air Maroc,(FRA) Frankfurt,10:55 AM,Prévu
+SZN 424,Air Senegal,(BCN) Barcelona,11:05 AM,Prévu
+AT 532,Royal Air Maroc,(ABJ) Abidjan,11:10 AM,Prévu
+AA 8004 ^,American Airlines,(ABJ) Abidjan,11:10 AM,Prévu
+AZ 6128 ^,Alitalia,(ABJ) Abidjan,11:10 AM,Prévu
+BA 7841 ^,British Airways,(ABJ) Abidjan,11:10 AM,Prévu
+AT 554,Royal Air Maroc,(LOS) Lagos,11:15 AM,Prévu
+AA 8015 ^,American Airlines,(LOS) Lagos,11:15 AM,Prévu
+AT 522,Royal Air Maroc,(BKO) Bamako,6:20 AM,Prévu
+AT 500,Royal Air Maroc,(DSS) Dakar,6:40 AM,Prévu
+AT 534,Royal Air Maroc,(ABJ) Abidjan,6:45 AM,Prévu
+AT 510,Royal Air Maroc,(NKC) Nouakchott,6:45 AM,Prévu
+AT 441,Royal Air Maroc,(FEZ) Fez,6:50 AM,Prévu
+AZ 6123 ^,Alitalia,(FEZ) Fez,6:50 AM,Prévu
+IB 1823 ^,Iberia,(FEZ) Fez,6:50 AM,Prévu
+TK 8315 ^,Turkish Airlines,(FEZ) Fez,6:50 AM,Prévu
+AT 544,Royal Air Maroc,(OUA) Ouagadougou,6:55 AM,Prévu
+QR 4549 ^,Qatar Airways,(OUA) Ouagadougou,6:55 AM,Prévu
+AT 578,Royal Air Maroc,(BJL) Banjul,6:55 AM,Prévu
+QR 4565 ^,Qatar Airways,(BJL) Banjul,6:55 AM,Prévu
+AT 471,Royal Air Maroc,(TNG) Tangier,7:00 AM,Prévu
+IB 1853 ^,Iberia,(TNG) Tangier,7:00 AM,Prévu
+QR 4515 ^,Qatar Airways,(TNG) Tangier,7:00 AM,Prévu
+TK 8322 ^,Turkish Airlines,(TNG) Tangier,7:00 AM,Prévu
+AT 546,Royal Air Maroc,(NIM) Niamey,7:00 AM,Prévu
+AT 400,Royal Air Maroc,(RAK) Marrakech,7:05 AM,Prévu
+AT 428,Royal Air Maroc,(AGA) Agadir,7:30 AM,Prévu
+IB 1814 ^,Iberia,(AGA) Agadir,7:30 AM,Prévu
+QR 4529 ^,Qatar Airways,(AGA) Agadir,7:30 AM,Prévu
+AT 1401,Royal Air Maroc,(OUD) Oujda,8:25 AM,Prévu
+AA 7988 ^,American Airlines,(OUD) Oujda,8:25 AM,Prévu
+AZ 6139 ^,Alitalia,(OUD) Oujda,8:25 AM,Prévu
+IB 1807 ^,Iberia,(OUD) Oujda,8:25 AM,Prévu
+AT 201,Royal Air Maroc,(JFK) New York,8:30 AM,Prévu
+AA 7951 ^,American Airlines,(JFK) New York,8:30 AM,Prévu
+3O 112,Air Arabia Maroc,(BRU) Brussels,12:10 AM,Atterri Retardé
+3O 322,Air Arabia Maroc,(BCN) Barcelona,2:45 AM,En Route
+3O 482,Air Arabia Maroc,(CUF) Cuneo,3:15 AM,En Route
+SZN 423,Air Senegal,(DSS) Dakar,4:35 AM,Prévu
+3O 456,Air Arabia Maroc,(BGY) Milan,5:20 AM,Prévu
+AT 955,Royal Air Maroc,(MXP) Milan,3:15 PM,Prévu
+AZ 7142 ^,Alitalia,(MXP) Milan,3:15 PM,Prévu
+AT 761,Royal Air Maroc,(ORY) Paris,3:20 PM,Prévu
+AT 947,Royal Air Maroc,(BLQ) Bologna,3:25 PM,Prévu
+AT 779,Royal Air Maroc,(CDG) Paris,3:55 PM,Prévu
+TO 3068,Transavia France,(ORY) Paris,4:10 PM,Prévu
+TP 1436,TAP Air Portugal,(LIS) Lisbon,4:10 PM,Prévu
+EY 1511 ^,Etihad Airways,(LIS) Lisbon,4:10 PM,Prévu
+S7 3775,S7 Airlines,(DME) Moscow,4:20 PM,Prévu
+AT 9001 ^,Royal Air Maroc,(DME) Moscow,4:20 PM,Prévu
+EK 753,Emirates,(DXB) Dubai,4:40 PM,Prévu
+TU 711,Tunisair,(TUN) Tunis,5:00 PM,Prévu Retardé
+3O 386,Air Arabia Maroc,(AGP) Malaga,5:05 PM,Prévu
+AF 1196,Air France,(CDG) Paris,5:10 PM,Prévu
+DL 8435 ^,Delta Air Lines,(CDG) Paris,5:10 PM,Prévu
+KL 2097 ^,KLM,(CDG) Paris,5:10 PM,Prévu
+SV 373,Saudia,(JED) Jeddah,5:35 PM,Prévu
+DT 7590,TAAG-Angola Airlines,(LAD) Luanda,5:55 PM,Prévu
+3O 374,Air Arabia Maroc,(BCN) Barcelona,6:10 PM,Prévu
+AT 765,Royal Air Maroc,(ORY) Paris,7:30 PM,Prévu
+3O 484,Air Arabia Maroc,(CUF) Cuneo,7:40 PM,Prévu
+AT 353,Royal Air Maroc,(BRU) Brussels,7:40 PM,Prévu
+AT 953,Royal Air Maroc,(BLQ) Bologna,7:45 PM,Prévu
+AZ 7143 ^,Alitalia,(BLQ) Bologna,7:45 PM,Prévu
+SV 375,Saudia,(RUH) Riyadh,7:50 PM,Prévu
+AT 9255 ^,Royal Air Maroc,(RUH) Riyadh,7:50 PM,Prévu
+AT 951,Royal Air Maroc,(MXP) Milan,7:50 PM,Prévu
+AZ 7141 ^,Alitalia,(MXP) Milan,7:50 PM,Prévu
+AT 941,Royal Air Maroc,(FCO) Rome,7:50 PM,Prévu
+AZ 7136 ^,Alitalia,(FCO) Rome,7:50 PM,Prévu
+AT 969,Royal Air Maroc,(VLC) Valencia,7:50 PM,Prévu
+IB 1975 ^,Iberia,(VLC) Valencia,7:50 PM,Prévu
+AT 803,Royal Air Maroc,(LGW) London,7:55 PM,Prévu
+AT 985,Royal Air Maroc,(AGP) Malaga,8:00 PM,Prévu
+IB 1977 ^,Iberia,(AGP) Malaga,8:00 PM,Prévu
+AT 931,Royal Air Maroc,(GVA) Geneva,8:05 PM,Prévu
+TK 6451,Turkish Airlines,(IST) Istanbul,8:20 PM,Prévu
+AT 833,Royal Air Maroc,(BRU) Brussels,8:30 PM,Prévu
+MAU 114,Mauritania Airlines,(NKC) Nouakchott,8:40 PM,Prévu
+AT 851,Royal Air Maroc,(AMS) Amsterdam,8:45 PM,Prévu
+AT 811,Royal Air Maroc,(FRA) Frankfurt,8:50 PM,Prévu
+AT 971,Royal Air Maroc,(MAD) Madrid,8:55 PM,Prévu
+IB 1970 ^,Iberia,(MAD) Madrid,8:55 PM,Prévu
+AT 1403,Royal Air Maroc,(OUD) Oujda,8:55 PM,Prévu
+AT 1413,Royal Air Maroc,(EUN) Laayoune,9:05 PM,Prévu
+AZ 6127 ^,Alitalia,(EUN) Laayoune,9:05 PM,Prévu
+AT 789,Royal Air Maroc,(CDG) Paris,9:10 PM,Prévu
+AT 911,Royal Air Maroc,(ISL) Istanbul,9:10 PM,Prévu
+TK 8304 ^,Turkish Airlines,(ISL) Istanbul,9:10 PM,Prévu
+AF 1496,Air France,(CDG) Paris,9:10 PM,Prévu
+DL 9188 ^,Delta Air Lines,(CDG) Paris,9:10 PM,Prévu
+KE 6375 ^,Korean Air,(CDG) Paris,9:10 PM,Prévu
+KL 2116 ^,KLM,(CDG) Paris,9:10 PM,Prévu
+AT 715,Royal Air Maroc,(NCE) Nice,9:15 PM,Prévu
+AT 771,Royal Air Maroc,(ORY) Paris,9:20 PM,Prévu
+AT 961,Royal Air Maroc,(BCN) Barcelona,9:20 PM,Prévu
+AT 801,Royal Air Maroc,(LHR) London,9:35 PM,Prévu
+BA 7847 ^,British Airways,(LHR) London,9:35 PM,Prévu
+AT 1423,Royal Air Maroc,(VIL) Dakhla,9:40 PM,Prévu
+3O 545,Air Arabia Maroc,(GVA) Geneva,9:45 PM,Prévu
+AT 733,Royal Air Maroc,(MRS) Marseille,9:50 PM,Prévu
+AT 721,Royal Air Maroc,(LYS) Lyon,9:50 PM,Prévu
+3O 798,Air Arabia Maroc,(GLN) Goulimime,9:50 PM,Prévu
+AT 977,Royal Air Maroc,(LPA) Las Palmas,10:00 PM,Prévu
+AT 799,Royal Air Maroc,(BOD) Bordeaux,10:00 PM,Prévu
+JAF 7502,TUI fly,(ORY) Paris,10:00 PM,Prévu
+AT 1437,Royal Air Maroc,(TTU) Tetouan,10:20 PM,Prévu
+IB 1837 ^,Iberia,(TTU) Tetouan,10:20 PM,Prévu
+AT 775,Royal Air Maroc,(ORY) Paris,10:25 PM,Prévu
+W6 8247,Wizz Air,(FCO) Rome,11:00 PM,Prévu
+PC 651,Pegasus,(SAW) Istanbul,11:05 PM,Prévu
+3O 336,Air Arabia Maroc,(MPL) Montpellier,11:25 PM,Prévu
+AT 412,Royal Air Maroc,(RAK) Marrakech,11:35 PM,Prévu
+TK 8311 ^,Turkish Airlines,(RAK) Marrakech,11:35 PM,Prévu
+AT 751,Royal Air Maroc,(ORY) Paris,11:40 PM,Prévu
+AT 203,Royal Air Maroc,(JFK) New York,11:59 PM,Prévu
+AA 7953 ^,American Airlines,(JFK) New York,11:59 PM,Prévu
+3O 468,Air Arabia Maroc,(BLQ) Bologna,12:10 PM,Prévu
+AT 526,Royal Air Maroc,(CKY) Conakry,12:15 PM,Prévu
+AA 8002 ^,American Airlines,(CKY) Conakry,12:15 PM,Prévu
+IB 8794,Iberia,(MAD) Madrid,12:15 PM,Prévu
+AA 8567 ^,American Airlines,(MAD) Madrid,12:15 PM,Prévu
+AT 9972 ^,Royal Air Maroc,(MAD) Madrid,12:15 PM,Prévu
+3O 458,Air Arabia Maroc,(BGY) Milan,12:15 PM,Prévu
+EK 751,Emirates,(DXB) Dubai,12:45 PM,Prévu
+QF 8751 ^,Qantas,(DXB) Dubai,12:45 PM,Prévu
+3O 342,Air Arabia Maroc,(LYS) Lyon,1:05 PM,Prévu
+QR 1397,Qatar Airways,(DOH) Doha,1:15 PM,Prévu
+AT 9707 ^,Royal Air Maroc,(DOH) Doha,1:15 PM,Prévu
+AT 989,Royal Air Maroc,(AGP) Malaga,1:35 PM,Prévu
+IB 1979 ^,Iberia,(AGP) Malaga,1:35 PM,Prévu
+AT 408,Royal Air Maroc,(RAK) Marrakech,1:40 PM,Prévu
+AA 7966 ^,American Airlines,(RAK) Marrakech,1:40 PM,Prévu
+S7 4034 ^,S7 Airlines,(RAK) Marrakech,1:40 PM,Prévu
+AT 422,Royal Air Maroc,(AGA) Agadir,1:50 PM,Prévu
+AA 7979 ^,American Airlines,(AGA) Agadir,1:50 PM,Prévu
+BA 7843 ^,British Airways,(AGA) Agadir,1:50 PM,Prévu
+IB 1812 ^,Iberia,(AGA) Agadir,1:50 PM,Prévu
+AT 791,Royal Air Maroc,(TLS) Toulouse,1:55 PM,Prévu
+3O 472,Air Arabia Maroc,(VCE) Venice,1:55 PM,Prévu
+AT 795,Royal Air Maroc,(MPL) Montpellier,2:00 PM,Prévu
+AT 729,Royal Air Maroc,(MRS) Marseille,2:05 PM,Prévu
+AT 719,Royal Air Maroc,(LYS) Lyon,2:20 PM,Prévu
+AF 1596,Air France,(CDG) Paris,2:35 PM,Prévu
+DL 8460 ^,Delta Air Lines,(CDG) Paris,2:35 PM,Prévu
+KE 6373 ^,Korean Air,(CDG) Paris,2:35 PM,Prévu
+KL 2112 ^,KLM,(CDG) Paris,2:35 PM,Prévu
+AT 983,Royal Air Maroc,(LIS) Lisbon,2:35 PM,Prévu
+TK 617,Turkish Airlines,(ISL) Istanbul,2:50 PM,Prévu
+AT 9401 ^,Royal Air Maroc,(ISL) Istanbul,2:50 PM,Prévu
+AT 571,Royal Air Maroc,(TUN) Tunis,2:50 PM,Prévu
+AT 973,Royal Air Maroc,(MAD) Madrid,2:50 PM,Prévu
+IB 1972 ^,Iberia,(MAD) Madrid,2:50 PM,Prévu
+AT 965,Royal Air Maroc,(BCN) Barcelona,2:55 PM,Prévu
+AT 757,Royal Air Maroc,(ORY) Paris,2:55 PM,Prévu
